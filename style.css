@@ -9,12 +9,15 @@ body {
 }
 
 .right-container {
-  background-color: blue;
   width: 65vw;
   height: 100vh;
 }
 
 .left-container {
+  background-image: url(./neom-s0A8sa9oasY-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -23,19 +26,20 @@ body {
   height: 100vh;
 }
 
-.logo-background {
-  background-color: rgba(0, 0, 0, 0.5);
+.banner {
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
   height: 12vh;
   width: 100%;
+  margin-right: 3rem;
   position: relative;
-  bottom: 10em;
+  top: 10rem;
 }
 
 .logo-header {
-  color: white;
+  color: #bea991;
   font-family: "Lilita One";
   font-size: 80px;
 }
@@ -46,23 +50,17 @@ body {
   margin-right: 1rem;
 }
 
-.background-pic {
-  background-image: url(./neom-s0A8sa9oasY-unsplash.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .credit {
+  margin-left: 2rem;
   margin-bottom: 1rem;
   margin-left: 1rem;
   font-size: 0.8em;
-  color: wheat;
+  color: rgb(45, 34, 15);
 }
 
 .credit a {
   text-decoration: none;
-  color: wheat;
+  color: rgb(45, 34, 15);
 }
 
 @media (max-width: 700px) {

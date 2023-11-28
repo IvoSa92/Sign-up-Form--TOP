@@ -108,9 +108,13 @@ body {
   flex-direction: column;
 }
 
+label {
+  margin-top: 1.5rem;
+}
+
 input {
   width: 12rem;
-  margin-bottom: 1.5rem;
+
   padding: 5px;
   border-radius: 5px;
   border-style: solid;

@@ -41,7 +41,7 @@ body {
 .logo-header {
   color: #bea991;
   font-family: "Lilita One";
-  font-size: 80px;
+  font-size: 60px;
 }
 
 .logo {
@@ -70,7 +70,7 @@ body {
   line-height: 2rem;
 }
 
-@media (max-width: 700px) and (max-height: 700px) {
+@media (max-width: 900px) and (max-height: 700px) {
   .logo-header {
     font-size: 50px;
   }
@@ -111,6 +111,18 @@ body {
 input {
   width: 12rem;
   margin-bottom: 1.5rem;
+  padding: 5px;
+  border-radius: 5px;
+  border-style: solid;
+  border-color: #bea991;
+}
+
+input:focus {
+  outline: none;
+  border-color: #807160;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .account-btn {
@@ -159,4 +171,27 @@ input {
   cursor: not-allowed;
   background: rgba(0, 0, 0, 0.08);
   color: rgba(0, 0, 0, 0.3);
+}
+
+.log-in {
+  margin-top: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
+  line-height: 2rem;
+  padding: 1rem;
+  margin-left: 2rem;
+}
+
+.log-in a {
+  text-decoration: none;
+  color: #4e3c28;
+}
+
+/* JavaScript classes*/
+
+.password-error {
+  font-size: 14px;
+  color: red;
+  padding: 0;
+  margin: 0;
 }

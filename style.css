@@ -81,6 +81,82 @@ body {
 }
 
 .grid-container {
+  margin-left: 2rem;
   display: grid;
-  grid-template-columns: auto auto;
+  grid-template-columns: 20rem 20rem;
+
+  padding: 1rem;
+}
+
+@media (max-width: 900px) {
+  .grid-container {
+    grid-template-columns: auto;
+  }
+  #e-mail {
+    margin-bottom: 4rem;
+  }
+}
+
+.grid-item {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-bottom: 0.2rem;
+  letter-spacing: 2px;
+}
+
+.grid-div {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  width: 12rem;
+  margin-bottom: 1.5rem;
+}
+
+.account-btn {
+  align-items: center;
+  background-color: #bea991;
+  border: 0;
+  border-radius: 50px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: -apple-system, system-ui, system-ui, "Segoe UI", Roboto,
+    "Helvetica Neue", "Fira Sans", Ubuntu, Oxygen, "Oxygen
+    Sans", Cantarell,
+    "Droid Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI
+    Symbol",
+    "Lucida Grande", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  margin-left: 2.9rem;
+  margin-top: 1.5rem;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s,
+    color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  vertical-align: middle;
+}
+.account-btn:hover {
+  background-color: #050608;
+  color: #ffffff;
+}
+.account-btn:active {
+  transform: scale(0.95);
+
+  color: rgb(255, 162, 0);
+}
+
+.account-btn:disabled {
+  cursor: not-allowed;
+  background: rgba(0, 0, 0, 0.08);
+  color: rgba(0, 0, 0, 0.3);
 }

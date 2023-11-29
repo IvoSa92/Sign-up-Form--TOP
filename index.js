@@ -8,19 +8,19 @@ passwordInput.addEventListener("input", checkInput);
 confirmPassword.addEventListener("input", checkInput);
 
 function checkInput() {
+  if (errorMessage) {
+    passwordInputDiv.removeChild(errorMessage);
+    errorMessage = null;
+  }
   if (
     passwordInput.value == "" ||
     passwordInput.value !== confirmPassword.value
-  )
-    if (!errorMessage) {
-      {
-        errorMessage = document.createElement("p");
-        errorMessage.textContent = "*Passwords do not match";
-        errorMessage.classList.add("password-error");
-        passwordInputDiv.appendChild(errorMessage);
-      }
-    } else if (errorMessage) {
-      errorMessage.remove();
-      errorMessage = null;
+  ) {
+    {
+      errorMessage = document.createElement("p");
+      errorMessage.textContent = "*Passwords do not match";
+      errorMessage.classList.add("password-error");
+      passwordInputDiv.appendChild(errorMessage);
     }
+  }
 }

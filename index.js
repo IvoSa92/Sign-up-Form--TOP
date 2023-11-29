@@ -1,10 +1,6 @@
 const passwordInputDiv = document.querySelector(".password-input");
 const passwordInput = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirm-password");
-const firstNameInput = document.querySelector("#first-name");
-const lastNameInput = document.querySelector("#last-name");
-const eMailInput = document.querySelector("#e-mail");
-const phoneNumberInput = querySelector("phone-number");
 const showPassword = document.querySelector(".show-pw");
 const createAccountBtn = document.querySelector(".account-btn");
 let errorMessage;

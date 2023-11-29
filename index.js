@@ -1,7 +1,10 @@
 const passwordInputDiv = document.querySelector(".password-input");
 const passwordInput = document.querySelector("#password");
 const confirmPassword = document.querySelector("#confirm-password");
+const showPassword = document.querySelector(".show-pw");
 let errorMessage;
+
+// Function and Event listener for error message:
 
 document.addEventListener("DOMContentLoaded", checkInput);
 passwordInput.addEventListener("input", checkInput);
@@ -24,3 +27,5 @@ function checkInput() {
     }
   }
 }
+
+// function and event listener for "show password" button:

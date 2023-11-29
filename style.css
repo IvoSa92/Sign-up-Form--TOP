@@ -220,6 +220,8 @@ input:focus {
   margin: 0;
 }
 
+/* MEDIA QUERY*/
+
 @media (max-width: 900px) {
   .container {
     flex-direction: column;

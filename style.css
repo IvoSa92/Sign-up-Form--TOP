@@ -6,6 +6,7 @@ body {
   display: flex;
   height: 100vh;
   width: 100vw;
+  padding: 0;
 }
 
 .right-container {
@@ -55,12 +56,12 @@ body {
   margin-bottom: 1rem;
   margin-left: 1rem;
   font-size: 0.8em;
-  color: rgb(45, 34, 15);
+  color: #bea991;
 }
 
 .credit a {
   text-decoration: none;
-  color: rgb(45, 34, 15);
+  color: #bea991;
 }
 
 .starting-text {
@@ -68,16 +69,6 @@ body {
   font-weight: lighter;
   padding: 3rem;
   line-height: 2rem;
-}
-
-@media (max-width: 900px) and (max-height: 700px) {
-  .logo-header {
-    font-size: 50px;
-  }
-
-  .logo {
-    height: 50px;
-  }
 }
 
 .grid-container {
@@ -227,4 +218,37 @@ input:focus {
   color: red;
   padding: 0;
   margin: 0;
+}
+
+@media (max-width: 900px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    justify-content: center;
+  }
+
+  .left-container {
+    width: 100vw;
+    height: 30vh;
+    order: 1;
+  }
+
+  .right-container {
+    width: 100vw;
+    order: 3;
+    padding: 20px;
+  }
+
+  .banner {
+    width: 100%;
+    height: auto;
+    order: 2;
+    top: 0;
+    margin-right: 0;
+  }
+
+  .grid-container {
+    flex-direction: column;
+  }
 }

@@ -29,3 +29,13 @@ function checkInput() {
 }
 
 // function and event listener for "show password" button:
+
+showPassword.addEventListener("click", showPw);
+
+function showPw() {
+  if ((showPassword.textContent = "show password")) {
+  }
+  showPassword.textContent = "hide password";
+  passwordInput.setAttribute("type", "text");
+  confirmPassword.setAttribute("type", "text");
+}
